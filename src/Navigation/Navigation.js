@@ -6,7 +6,8 @@ import {Colors} from '../Themes';
 import {width, height} from 'react-native-dimension';
 import {Splash} from '../Containers/Splash';
 import {Onboarding} from '../Containers/Onboarding';
-import {AuthNavigator} from '.';
+import {AuthNavigator, AppNavigator} from '.';
+import {Text} from 'react-native-elements';
 
 const MainStack = createStackNavigator();
 
@@ -57,11 +58,11 @@ export default class Navigation extends Component {
               component={AuthNavigator}
               options={{headerShown: false}}
             />
-            {/* <MainStack.Screen
+            <MainStack.Screen
               name="App"
               component={AppNavigator}
               options={{headerShown: false}}
-            /> */}
+            />
           </MainStack.Navigator>
         </NavigationContainer>
       </SafeAreaView>

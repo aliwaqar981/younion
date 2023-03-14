@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import {ScrollView, StatusBar, useColorScheme, View} from 'react-native';
+import {useColorScheme} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import {Navigation} from './src/Navigation';
 
